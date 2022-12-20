@@ -1,4 +1,4 @@
-package com.civicscience.markI.constants;
+package com.civicscience.markI.constant;
 
 import lombok.Getter;
 

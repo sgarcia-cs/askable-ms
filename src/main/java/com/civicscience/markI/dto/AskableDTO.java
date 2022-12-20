@@ -1,7 +1,7 @@
 package com.civicscience.markI.dto;
 
-import com.civicscience.markI.constants.AskableType;
-import com.civicscience.markI.constants.Operation;
+import com.civicscience.markI.constant.AskableType;
+import com.civicscience.markI.constant.Operation;
 import lombok.Getter;
 
 import java.util.Optional;
