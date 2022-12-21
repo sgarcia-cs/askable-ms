@@ -7,6 +7,8 @@ import com.civicscience.markI.client.dto.QuestionCheckboxItem;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 
+import java.util.List;
+
 @FeignClient(path = "")
 public interface CoreClient {
     @RequestLine("GET /api/1/questions/{id}")
@@ -16,5 +18,5 @@ public interface CoreClient {
     CheckboxGroup getCheckboxGroup(String id);
 
     @RequestLine("GET /api/1/questions/{id}/checkbox_items")
-    QuestionCheckboxItem getQuestionCheckboxItem(String id);
+    List<QuestionCheckboxItem> getQuestionCheckboxItem(String id);
 }

@@ -11,6 +11,6 @@ public abstract class AskableDTO {
     private String id;
     private Operation operation;
     private AskableType type;
-    private Optional<AskableDataDTO> data;
+    private Optional<AskableDataDTO> metaData;
 
 }
