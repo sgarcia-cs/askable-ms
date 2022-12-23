@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 
 import java.util.List;
 
-@FeignClient(path = "")
+@FeignClient(name="CoreClient")
 public interface CoreClient {
     @RequestLine("GET /api/1/questions/{id}")
     Question getQuestion(String id);
